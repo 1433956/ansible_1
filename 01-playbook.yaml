@@ -1,5 +1,5 @@
 - name: ping ansible node from ansible server
-  host: inventory
+  hosts: frontend
   tasks:
   - name: ping node server
     ansible.builtin.ping:
