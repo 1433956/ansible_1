@@ -1,0 +1,25 @@
+- name: handling multiple tasks1 & roles 1
+  hosts: local
+  connection: local
+  tasks:
+  - name: this is for role1 & tasks1
+    ansible.builtin.debug:
+      msg: "this is for task1 & role1 "
+
+  - name: this is for role1 & tasks2
+    ansible.builtin.debug:
+      msg: "this is for task1 & role2 "
+
+- name: handling multiple tasks2 & roles2
+  hosts: local
+  connection: local
+  tasks:
+  - name: this is for role2 & tasks1
+    ansible.builtin.debug:
+      msg: "this is for task2 & role1 "
+
+  - name: this is for role2 & tasks2
+    ansible.builtin.debug:
+      msg: "this is for task2 & role2 "    
+
+
