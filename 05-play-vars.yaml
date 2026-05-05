@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-  - COURSE: "AWS"
-  - DURATION: "10 HRS"
-  - TRAINER: "SIVA"
+    COURSE: "AWS"
+    DURATION: "10 HRS"
+    TRAINER: "SIVA"
   tasks:
   - name: playing with variables
     ansible.builtin.debug:
