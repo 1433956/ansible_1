@@ -1,7 +1,8 @@
 - name: play with variables from files
   hosts: local
   connection: local  
-  
+  vars_file: local
+
   tasks:
   - name: playing with variables method overloading
     ansible.builtin.debug:
