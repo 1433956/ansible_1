@@ -9,3 +9,10 @@
   - name: playing with variables
     ansible.builtin.debug:
       msg: "hi! we have started course:: {{ COURSE }}, for a duration of ::{{ DURATION }} and instructed would be {{ TRAINER }}"
+  
+  tasks:
+  - name: playing with variables
+    vars:
+        COURSE: Ansible
+    ansible.builtin.debug:
+      msg: "hi! we have started course:: {{ COURSE }}, for a duration of ::{{ DURATION }} and instructed would be {{ TRAINER }}"
