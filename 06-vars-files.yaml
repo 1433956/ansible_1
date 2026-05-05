@@ -4,8 +4,6 @@
   
   tasks:
   - name: playing with variables method overloading
-    vars:
-      COURSE: Ansible
     ansible.builtin.debug:
       msg: "hi! we have started course:: {{ COURSE }}, for a duration of ::{{ DURATION }} and instructed would be {{ TRAINER }}"
   - name: playing with variables
