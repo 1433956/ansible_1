@@ -1,6 +1,7 @@
 - name: install nginx based on the os family
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: install nginx if os_family is RedHat
     ansible.builtin.dnf:
