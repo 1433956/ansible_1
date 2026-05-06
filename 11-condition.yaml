@@ -11,5 +11,5 @@
 
   - name: given number is >= 100
     ansible.builtin.debug:
-      msg: "{{ NUMBER }} :: is lessthan equal to 100"
+      msg: "{{ NUMBER }} :: is Greater than equal to 100"
     when: NUMBER >= 100
