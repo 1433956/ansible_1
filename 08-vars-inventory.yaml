@@ -1,9 +1,9 @@
-- name: variables from prompt
+- name: variables from inventory
   hosts: local
   connection: local
   
   tasks:
-  - name: printing variables from the prompt
+  - name: printing variables from the inventory
     ansible.builtin.debug:
       msg: "hi! we have started course:: {{ COURSE }}, for a duration of ::{{ DURATION }} and instructed would be {{ TRAINER }}"
 
