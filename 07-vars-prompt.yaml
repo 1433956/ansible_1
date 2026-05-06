@@ -1,10 +1,15 @@
-- name: variables from prompt
+- name: read values form prompt & print on console
   hosts: local
   connection: local
+  vars_prompt:
+  - name: USERBNAME
+    prompt: please enter UserName
+    private: true
+  - name: PASSWORD
+    prompt: please enter password
+    private: true
   tasks:
-  - name: printing variables from the prompt
+  - name: print UserName and password
     ansible.builtin.debug:
-      msg: "hi! we have started course:: {{ COURSE }}, for a duration of ::{{ DURATION }} and instructed would be {{ TRAINER }}"
-
-
+      msg: "username is :: {{ USERBNAME }} password IS {{ PASSWORD }}"
 # ansible-playbook -i inventory.ini -e ansible_username=ec2-user -e ansible_password=DevOps321 -e COURSE="anisble" -e DURATION="10 hrs" -e TRAINER="siva" <>.yaml
