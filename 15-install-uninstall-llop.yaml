@@ -9,7 +9,6 @@
       state: "{{ item.state }}"
     loop:
     - {name: "mysql",state: "removed"}
-    - {name: "python3",state: "removed"}
     - {name: "zip",state: "removed"}
 
 
