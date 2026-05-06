@@ -1,14 +1,13 @@
 - name: print values using loop
   hosts: local
   connection: local
-  vars:
-    names:
-    - ramesh
-    - suresh
-    - ramu
+  loop:
+  - ramesh
+  - suresh
+  - ramu
   tasks:
   - name: print values with loop
     ansible.builtin.debug:
-      msg: " {{ item }}"
+      msg: " hi!, hello :: {{ item }}"
 
 
