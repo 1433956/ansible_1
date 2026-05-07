@@ -3,7 +3,6 @@
   connection: local
   vars:
     persons:"ramesh,suresh,ramu,rahim"
-   
   tasks:
   - name: print persons info
     ansible.builtin.debug:
